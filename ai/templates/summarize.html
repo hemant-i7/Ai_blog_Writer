@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Summarize | AI Writer</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h1>Summarize</h1>
+		<p>Use our AI Writer to summarize text quickly and accurately. Simply enter your original text below and let our AI do the rest!</p>
+		<form method="POST" action="{{ url_for('summarize') }}">
+			<label for="original_text">Original Text:</label>
+            <textarea id="original_text" name="original_text" rows="5" cols="50"></textarea>
+			<input type="submit" value="Summarize">
+		</form>
+		{% if summarized_text %}
+			<h2>Summarized Text:</h2>
+			<p>{{ summarized_text }}</p>
+		{% endif %}
+	</div>
+</body>
+</html>

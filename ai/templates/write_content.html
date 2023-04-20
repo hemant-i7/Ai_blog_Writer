@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Write Content | AI Writer</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h1>Write Content</h1>
+		<p>Use our AI Writer to generate new content based on a topic. Simply enter a topic below and let our AI do the rest!</p>
+		<form method="POST" action="{{ url_for('write_content') }}">
+			<label for="topic">Topic:</label>
+			<input type="text" id="topic" name="topic">
+			<input type="submit" value="Generate Content">
+		</form>
+		{% if generated_content %}
+			<h2>Generated Content:</h2>
+			<p>{{ generated_content }}</p>
+		{% endif %}
+	</div>
+</body>
+</html>

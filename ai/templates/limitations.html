@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>AI Writer</title>
+</head>
+<body>
+
+    <div class="for__shadow">
+    <header class="brand__header">
+        <span class="brand__name">Writer AI</span>
+    </header>
+
+    <nav class="nav__menu">
+        <a href="/" class="page__link">Home</a>
+        <a href="/summarize" class="page__link">Summarize</a>
+        <a href="/paraphrase" class="page__link">Paraphrase</a>
+        <a href="/write_content" class="page__link">Generate</a>
+        <a href="/limitations" class="page__link active__link">Limitations</a>
+    </nav>
+
+    </div>
+
+    <div class="limit__hero">
+        <p class="limit__text">As a language model, here are some of the limitations of OpenAI APIs:<br></p>
+
+        <p class="limit">
+            1. Data bias:<br> OpenAI APIs are trained on large datasets of human-generated text, which can lead to bias and inaccuracies in the AI-generated outputs.<br><br>
+            
+            2. Contextual understanding:<br> While OpenAI APIs are capable of generating text that appears fluent and coherent, they may not always understand the full context of a given prompt or question. This can lead to outputs that are technically correct but do not fully address the user's needs.<br><br>
+            
+            3. Lack of creativity:<br> While OpenAI APIs can generate a wide range of outputs, they are not capable of true creativity. They can generate text based on the patterns they've learned from their training data, but they do not have true agency or the ability to generate truly novel ideas.<br><br>
+            
+            4. Limitations on certain types of data:<br> Some OpenAI APIs are specifically designed to work with certain types of data, such as text or images, and may not be suitable for use with other types of data.<br><br>
+            
+            5. Computational resources:<br> OpenAI APIs require significant computational resources to run, which may limit their accessibility for some users or applications.<br><br>
+
+        </p>
+        
+    </div>
+
+    
+</body>
+</html>

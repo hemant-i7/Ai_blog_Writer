@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary: #353B3C;
+    --off-white: #eef0f2;
+    --off-track: #846a6a;
+    --hero: #a2999e;
+
+}
+
+body {
+    background-color: var(--off-white);
+}
+
+.for__shadow {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.brand__header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+}
+
+.brand__name {
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav__menu {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--off-white);
+    color: var(--primary);
+}
+
+.page__link {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1.8rem;
+    padding: 10px 20px 10px 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+.active__link {
+    background-color: var(--primary);
+    border-radius: 60px;
+    font-size: 700;
+    font-size: 2rem;
+    color: var(--off-white);
+    border-bottom: 10px solid var(--off-white);
+    border-top: 10px solid var(--off-white);
+}
+
+.page__link:hover {
+    background-color: var(--off-track);
+    border-radius: 60px;
+    font-size: 700;
+    font-size: 2rem;
+    color: var(--off-white);
+    border-bottom: 10px solid var(--off-white);
+    border-top: 10px solid var(--off-white);
+    transition: all 0.7s ease-in-out;
+}
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--hero);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.text {
+    width: 700px;
+    height: 450px;
+    color: var(--primary);
+    font-size: 3.5rem;
+    text-align: justify;
+    line-height: 55px;
+    font-weight: 600;
+}
+
+.tags {
+    width: 700px;
+    height: 100px;
+    color: var(--primary);
+    font-size: 3rem;
+    text-align: center;
+    line-height: 55px;
+    font-weight: 600;
+}
+
+.limit__hero {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--hero);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 0 0;
+    z-index: -1;
+}
+
+.limit__text {
+    width: 700px;
+    height: 100px;
+    color: var(--primary);
+    font-size: 3.5rem;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.limit {
+    width: 700px;
+    height: 100px;
+    color: var(--primary);
+    font-size: 2rem;
+    justify-items: center;
+    font-weight: 600;
+    text-align: justify;
+}
